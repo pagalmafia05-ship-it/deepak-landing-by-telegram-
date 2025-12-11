@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Deepak Wadhwa – Landing</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg:#0f1112;
+      --panel:#142728;
+      --card:#18343a;
+      --accent:#00e199;
+      --gold:#f2b600;
+      --cta1:#2db6ff;
+      --cta2:#0a9ef2;
+      --muted:#bfc9cc;
+      --white:#ffffff;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:"Poppins",system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial;
+      background:var(--bg);
+      color:var(--white);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+
+    .container{
+      max-width:900px;
+      margin:24px auto;
+      padding:20px;
+    }
+
+    /* Top hero */
+    .hero{
+      background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.00));
+      border-radius:16px;
+      padding:22px;
+      text-align:center;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.6);
+    }
+    .avatar-wrap{
+      width:132px;
+      height:132px;
+      margin:0 auto 12px;
+      border-radius:50%;
+      border:6px solid #f7d34a; /* ring */
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      overflow:hidden;
+      background:linear-gradient(135deg,#6a2,#58a);
+    }
+    .avatar-wrap img{width:100%;height:100%;object-fit:cover;display:block}
+
+    h1{
+      font-size:26px;
+      margin:10px 0 6px;
+      letter-spacing:0.6px;
+      color:var(--gold);
+    }
+    .tag{
+      color:var(--muted);
+      margin-bottom:14px;
+      font-size:14px;
+    }
+
+    .stats{
+      display:flex;
+      gap:10px;
+      justify-content:center;
+      margin:14px 0;
+      flex-wrap:wrap;
+    }
+    .stat{
+      background:rgba(255,255,255,0.03);
+      padding:10px 14px;
+      border-radius:12px;
+      font-weight:600;
+      font-size:14px;
+      color:var(--white);
+    }
+
+    .cta{
+      margin-top:14px;
+    }
+    .btn-telegram{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      padding:14px 26px;
+      border-radius:999px;
+      font-weight:600;
+      font-size:16px;
+      text-decoration:none;
+      background:linear-gradient(90deg,var(--cta1),var(--cta2));
+      color:#fff;
+      box-shadow: 0 8px 24px rgba(10,160,242,0.18), inset 0 -2px 6px rgba(0,0,0,0.2);
+    }
+    .btn-telegram:active{transform:translateY(1px)}
+
+    /* features */
+    .features{
+      display:grid;
+      grid-template-columns:1fr;
+      gap:12px;
+      margin-top:20px;
+    }
+    .feature{
+      background:rgba(255,255,255,0.03);
+      padding:14px;
+      border-radius:12px;
+      display:flex;
+      align-items:center;
+      gap:12px;
+      font-weight:600;
+    }
+    .feature .dot{
+      width:28px;height:28px;border-radius:8px;background:var(--accent);display:flex;align-items:center;justify-content:center;color:#00221a;font-weight:700;
+    }
+
+    /* testimonials */
+    .section-title{
+      margin-top:22px;
+      display:flex;
+      align-items:center;
+      gap:10px;
+      justify-content:center;
+      color:var(--gold);
+      font-weight:700;
+      font-size:18px;
+    }
+    .testimonials{margin-top:12px;display:flex;flex-direction:column;gap:14px}
+
+    .testimonial{
+      background:var(--card);
+      border-radius:14px;
+      padding:16px;
+      display:flex;
+      gap:12px;
+      align-items:flex-start;
+      position:relative;
+      box-shadow: 0 8px 20px rgba(2,10,12,0.6);
+    }
+    .testimonial::before{
+      content:"";
+      width:8px;
+      background:linear-gradient(180deg,var(--accent),#00c88f);
+      border-radius:8px;
+      position:absolute;
+      left:8px;
+      top:8px;
+      bottom:8px;
+    }
+    .testimonial .content{
+      margin-left:18px; /* leave space for stripe */
+      color: #e9f3f2;
+      font-style:italic;
+      line-height:1.5;
+      font-size:15px;
+    }
+    .testimonial .author{
+      display:block;
+      margin-top:10px;
+      font-weight:700;
+      font-style:normal;
+      color:#fff;
+    }
+
+    /* mobile spacing */
+    @media(min-width:768px){
+      .container{padding:30px}
+      .hero{display:block;padding:28px}
+      .features{grid-template-columns:repeat(3,1fr)}
+      h1{font-size:34px}
+      .avatar-wrap{width:140px;height:140px}
+      .testimonial{padding:20px}
+      .testimonial .content{font-size:16px}
+    }
+
+    /* small helper */
+    .muted{color:var(--muted)}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- HERO -->
+    <div class="hero" role="banner">
+      <div class="avatar-wrap">
+        <!-- Replace with your avatar image file path -->
+        <img src="images/qr.png" alt="Profile photo">
+      </div>
+
+      <h1>DEEPAK WADHWA</h1>
+      <div class="tag">✅ Trusted by thousands of learners</div>
+
+      <div class="stats">
+        <div class="stat">👥 7,496+ Members</div>
+        <div class="stat">⏱ 24/7 Updates</div>
+        <div class="stat">Free to Join</div>
+      </div>
+
+      <div class="cta">
+        <!-- Put your Telegram invite link in href -->
+        <a class="btn-telegram" href="https://t.me/+h2qui0sf2JA1NDc9" target="_blank" rel="noopener">
+          <!-- Inline telegram icon (simple) -->
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+            <path d="M22 4L2 11l5 2 2 6 3-4 6 4 4-16z" fill="white"/>
+          </svg>
+          Join on Telegram
+        </a>
+      </div>
+
+      <!-- Features -->
+      <div class="features" style="margin-top:18px">
+        <div class="feature"><div class="dot">✓</div><div>Market Insights & Discussions</div></div>
+        <div class="feature"><div class="dot">✓</div><div>Learn with Experts</div></div>
+        <div class="feature"><div class="dot">✓</div><div>Practical Strategies</div></div>
+      </div>
+    </div>
+
+    <!-- Testimonials header -->
+    <div class="section-title">🏆 Our Members Speak</div>
+
+    <!-- Testimonials -->
+    <div class="testimonials">
+      <div class="testimonial">
+        <div class="content">“आपके Insights से मुझे पिछले महीने ₹50,000 का फायदा हुआ! यह सबसे अच्छा फ्री चैनल है।” 
+          <span class="author">— Riya S.</span>
+        </div>
+      </div>
+
+      <div class="testimonial">
+        <div class="content">“रोज़ाना के Market Analysis बहुत सटीक होते हैं। मैंने आपसे बहुत कुछ सीखा है।” 
+          <span class="author">— Aman K.</span>
+        </div>
+      </div>
+
+      <div class="testimonial">
+        <div class="content">“मैंने 300+ चैनल देखे हैं, लेकिन आपके कंटेंट की क्वालिटी और टाइमिंग बेस्ट है।” 
+          <span class="author">— Praveen D.</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
